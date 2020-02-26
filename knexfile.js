@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
 
-  test: {
+  development: {
     client: 'pg',
     connection: {
       database: process.env.DB_NAME,
@@ -52,5 +52,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-
 };
