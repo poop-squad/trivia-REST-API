@@ -9,10 +9,22 @@ exports.seed = async knex => {
             category: 'general'
         },
         {
+            question_id: 'e2698u',
+            question_content: 'how many Bs in Angelo',
+            submitter_name: 'not angelo',
+            category: 'general'
+        },
+        {
             question_id: 'a453z',
             question_content: 'opposite of up',
+            submitter_name: 'not batty',
+            category: 'general'
+        },
+        {
+            question_id: 'b290a',
+            question_content: 'opposite of down',
             submitter_name: 'batty',
-            category: 'idiot'
+            category: 'general'
         },
         {
             question_id: 'c476o',
@@ -28,8 +40,18 @@ exports.seed = async knex => {
             submitter_name: 'angelo'
         },
         {
+            question_id: 'e2698u',
+            answer_content: '0',
+            submitter_name: 'not angelo'
+        },
+        {
             question_id: 'a453z',
             answer_content: 'down',
+            submitter_name: 'not batty'
+        },
+        {
+            question_id: 'b290a',
+            answer_content: 'up',
             submitter_name: 'batty'
         },
         {

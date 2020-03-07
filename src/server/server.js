@@ -4,7 +4,7 @@ require('express-async-errors');
 const express = require('express');
 const morgan =  require('morgan');
 const cors = require('cors');
-const questions = require('./routes/questions-router');
+const qAndARouter = require('./routes/questions-and-answers-router');
 const errorHandler = require('./utils/error-handler');
 
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 app.use(morgan('combined'));
 app.use(cors());
 app.use(express.json());
-app.use('/questions', questions);
+app.use('/qanda', qAndARouter);
 
 app.get('/', (req, res) => {
     res.send({
